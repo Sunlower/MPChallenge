@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		980EDCC32A40056800B2E725 /* FilterButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980EDCC22A40056800B2E725 /* FilterButtons.swift */; };
+		980EDCC52A40097E00B2E725 /* CreateRouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980EDCC42A40097E00B2E725 /* CreateRouteView.swift */; };
 		98C9A02A2A3C9D3F00EE5D6E /* CLLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C9A0292A3C9D3F00EE5D6E /* CLLocationManager.swift */; };
 		98C9A02C2A3C9D9800EE5D6E /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C9A02B2A3C9D9800EE5D6E /* WeatherView.swift */; };
 		98C9A02E2A3C9E8D00EE5D6E /* WeatherKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C9A02D2A3C9E8D00EE5D6E /* WeatherKitManager.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		980EDCC22A40056800B2E725 /* FilterButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButtons.swift; sourceTree = "<group>"; };
+		980EDCC42A40097E00B2E725 /* CreateRouteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRouteView.swift; sourceTree = "<group>"; };
 		98C9A0292A3C9D3F00EE5D6E /* CLLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationManager.swift; sourceTree = "<group>"; };
 		98C9A02B2A3C9D9800EE5D6E /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		98C9A02D2A3C9E8D00EE5D6E /* WeatherKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherKitManager.swift; sourceTree = "<group>"; };
@@ -63,7 +67,9 @@
 				98C9A02F2A3C9FA200EE5D6E /* MPChallenge.entitlements */,
 				D634D4002A38B35C0031A934 /* MPChallengeApp.swift */,
 				D634D4022A38B35C0031A934 /* ContentView.swift */,
+				980EDCC22A40056800B2E725 /* FilterButtons.swift */,
 				98C9A02B2A3C9D9800EE5D6E /* WeatherView.swift */,
+				980EDCC42A40097E00B2E725 /* CreateRouteView.swift */,
 				98C9A0302A3CA34A00EE5D6E /* WeatherFakeView.swift */,
 				98C9A02D2A3C9E8D00EE5D6E /* WeatherKitManager.swift */,
 				98C9A0292A3C9D3F00EE5D6E /* CLLocationManager.swift */,
@@ -175,8 +181,10 @@
 				98C9A0312A3CA34A00EE5D6E /* WeatherFakeView.swift in Sources */,
 				D634D4032A38B35C0031A934 /* ContentView.swift in Sources */,
 				D634D4012A38B35C0031A934 /* MPChallengeApp.swift in Sources */,
+				980EDCC32A40056800B2E725 /* FilterButtons.swift in Sources */,
 				98C9A02A2A3C9D3F00EE5D6E /* CLLocationManager.swift in Sources */,
 				98C9A02C2A3C9D9800EE5D6E /* WeatherView.swift in Sources */,
+				980EDCC52A40097E00B2E725 /* CreateRouteView.swift in Sources */,
 				98C9A02E2A3C9E8D00EE5D6E /* WeatherKitManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
