@@ -12,6 +12,8 @@ class LocationDataManager : NSObject, ObservableObject, CLLocationManagerDelegat
     var locationManager = CLLocationManager()
     @Published var authorizationStatus: CLAuthorizationStatus?
 
+    var coordinate: (Double, Double) { (latitude, longitude) }
+    
     var latitude: Double {
         locationManager.location?.coordinate.latitude ?? 0.0
     }
