@@ -28,7 +28,7 @@ struct CreateRouteView: View {
 
     @State private var currentCity = "Carregando..."
     @State private var searchResults: [MKMapItem] = []
-    @State private var searchCurrent: [MKMapItem] = []
+    @State var searchCurrent: [MKMapItem] = []
 
     var body: some View {
         if locationDataManager.authorizationStatus == .authorizedWhenInUse {
@@ -61,7 +61,7 @@ struct CreateRouteView: View {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
                         ForEach(Tag.allTags, id: \.name) { filterTag in
-                            TagButton(searchResults: $searchResults, searchCurrent: $searchCurrent, filterTag: filterTag)
+                            TagButton(searchResults: $searchResults, searchCurrent: searchCurrent, filterTag: filterTag)
                         }
                     }
                     .padding(.leading)

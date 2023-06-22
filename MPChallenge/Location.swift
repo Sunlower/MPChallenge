@@ -12,5 +12,5 @@ struct Location {
     let local: MKMapItem
     let category: Category
     let imageName: String
+    let isSelected: Bool
 }
-

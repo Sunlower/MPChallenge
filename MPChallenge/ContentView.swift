@@ -12,7 +12,6 @@ struct ContentView: View {
 //        WeatherView()
 //        WeatherFakeView()
         CreateRouteView()
-        
     }
 }
 

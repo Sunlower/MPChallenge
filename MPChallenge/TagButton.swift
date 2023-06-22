@@ -12,7 +12,7 @@ struct TagButton: View {
     @Binding var searchResults: [MKMapItem]
     @StateObject var locationDataManager = LocationDataManager()
     @State var isActivate: Bool = false
-    @Binding var searchCurrent: [MKMapItem]
+    @State var searchCurrent: [MKMapItem]
     
     let filterTag: Tag
 
@@ -27,7 +27,7 @@ struct TagButton: View {
                     searchResults = searchResults.filter {!searchCurrent.contains($0)}
                 }
 //                search(for: "restaurant")
-                
+
             } label: {
                 if isActivate == true {
 //                    Label("Restaurantes", systemImage: "fork.knife.circle")
@@ -62,60 +62,6 @@ struct TagButton: View {
                     }
                 }
             }
-//            .buttonStyle(.borderedProminent)
-//            Button {
-//                search(for: "beach")
-//            } label: {
-//                Label("Praias", systemImage: "beach.umbrella")
-//            }
-//            .buttonStyle(.borderedProminent)
-
-//            Button {
-//                isActivate.toggle()
-//                if isActivate == true {
-//                    search(for: "beach")
-//                } else {
-//                    search(for: " ")
-//                }
-////                search(for: "restaurant")
-//                
-//            } label: {
-//                if isActivate == true {
-////                    Label("Restaurantes", systemImage: "fork.knife.circle")
-//                    HStack{
-//                        Image(systemName: "beach.umbrella")
-//                            .foregroundStyle(.white)
-//                        Text("Praias")
-//                            .foregroundStyle(.white)
-//                    }
-//                    .padding()
-//                    .background {
-//                        Capsule()
-//                            .fill(.blue)
-//                            .frame(height: 32)
-//
-//                    }
-//                    
-//                } else {
-//                    HStack{
-//                        Image(systemName: "beach.umbrella")
-//                            .foregroundStyle(.blue)
-//                        Text("Praias")
-//                            .foregroundStyle(.blue)
-//                            
-//                    }
-//                    .padding()
-//                    .background{
-//                        Capsule()
-//                            .stroke(.blue, lineWidth: 2)
-//                            .frame(height: 32)
-//
-//                    }
-//                    
-//                }
-//                
-//            }
-
         }
     }
 
