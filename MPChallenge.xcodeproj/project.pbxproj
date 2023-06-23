@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		980EDCC32A40056800B2E725 /* TagButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980EDCC22A40056800B2E725 /* TagButton.swift */; };
+		980EDCC52A40097E00B2E725 /* CreateRouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980EDCC42A40097E00B2E725 /* CreateRouteView.swift */; };
+		980EDCCB2A40984E00B2E725 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980EDCCA2A40984E00B2E725 /* Location.swift */; };
+		980EDCCD2A41CDF600B2E725 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980EDCCC2A41CDF600B2E725 /* Tag.swift */; };
+		980EDCCF2A41DE8900B2E725 /* ItemLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980EDCCE2A41DE8900B2E725 /* ItemLocationView.swift */; };
+		980EDCD12A44717E00B2E725 /* CreateRoteWeatherStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980EDCD02A44717E00B2E725 /* CreateRoteWeatherStatusView.swift */; };
+		98C9A02A2A3C9D3F00EE5D6E /* CLLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C9A0292A3C9D3F00EE5D6E /* CLLocationManager.swift */; };
+		98C9A02C2A3C9D9800EE5D6E /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C9A02B2A3C9D9800EE5D6E /* WeatherView.swift */; };
+		98C9A02E2A3C9E8D00EE5D6E /* WeatherKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C9A02D2A3C9E8D00EE5D6E /* WeatherKitManager.swift */; };
+		98C9A0312A3CA34A00EE5D6E /* WeatherFakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C9A0302A3CA34A00EE5D6E /* WeatherFakeView.swift */; };
 		D634D4012A38B35C0031A934 /* MPChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D634D4002A38B35C0031A934 /* MPChallengeApp.swift */; };
 		D634D4032A38B35C0031A934 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D634D4022A38B35C0031A934 /* ContentView.swift */; };
 		D634D4052A38B35E0031A934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D634D4042A38B35E0031A934 /* Assets.xcassets */; };
@@ -14,6 +24,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		980EDCC22A40056800B2E725 /* TagButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagButton.swift; sourceTree = "<group>"; };
+		980EDCC42A40097E00B2E725 /* CreateRouteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRouteView.swift; sourceTree = "<group>"; };
+		980EDCCA2A40984E00B2E725 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		980EDCCC2A41CDF600B2E725 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		980EDCCE2A41DE8900B2E725 /* ItemLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemLocationView.swift; sourceTree = "<group>"; };
+		980EDCD02A44717E00B2E725 /* CreateRoteWeatherStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoteWeatherStatusView.swift; sourceTree = "<group>"; };
+		98C9A0292A3C9D3F00EE5D6E /* CLLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationManager.swift; sourceTree = "<group>"; };
+		98C9A02B2A3C9D9800EE5D6E /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		98C9A02D2A3C9E8D00EE5D6E /* WeatherKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherKitManager.swift; sourceTree = "<group>"; };
+		98C9A02F2A3C9FA200EE5D6E /* MPChallenge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MPChallenge.entitlements; sourceTree = "<group>"; };
+		98C9A0302A3CA34A00EE5D6E /* WeatherFakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherFakeView.swift; sourceTree = "<group>"; };
 		D634D3FD2A38B35C0031A934 /* MPChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D634D4002A38B35C0031A934 /* MPChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPChallengeApp.swift; sourceTree = "<group>"; };
 		D634D4022A38B35C0031A934 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,8 +72,19 @@
 		D634D3FF2A38B35C0031A934 /* MPChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				98C9A02F2A3C9FA200EE5D6E /* MPChallenge.entitlements */,
 				D634D4002A38B35C0031A934 /* MPChallengeApp.swift */,
 				D634D4022A38B35C0031A934 /* ContentView.swift */,
+				980EDCC22A40056800B2E725 /* TagButton.swift */,
+				980EDCCE2A41DE8900B2E725 /* ItemLocationView.swift */,
+				980EDCCC2A41CDF600B2E725 /* Tag.swift */,
+				980EDCCA2A40984E00B2E725 /* Location.swift */,
+				98C9A02B2A3C9D9800EE5D6E /* WeatherView.swift */,
+				980EDCC42A40097E00B2E725 /* CreateRouteView.swift */,
+				980EDCD02A44717E00B2E725 /* CreateRoteWeatherStatusView.swift */,
+				98C9A0302A3CA34A00EE5D6E /* WeatherFakeView.swift */,
+				98C9A02D2A3C9E8D00EE5D6E /* WeatherKitManager.swift */,
+				98C9A0292A3C9D3F00EE5D6E /* CLLocationManager.swift */,
 				D634D4042A38B35E0031A934 /* Assets.xcassets */,
 				D634D4062A38B35E0031A934 /* Preview Content */,
 			);
@@ -77,6 +109,7 @@
 				D634D3F92A38B35C0031A934 /* Sources */,
 				D634D3FA2A38B35C0031A934 /* Frameworks */,
 				D634D3FB2A38B35C0031A934 /* Resources */,
+				14403F492A3A2FC10086F6ED /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -132,13 +165,43 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14403F492A3A2FC10086F6ED /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D634D3F92A38B35C0031A934 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				980EDCCF2A41DE8900B2E725 /* ItemLocationView.swift in Sources */,
+				98C9A0312A3CA34A00EE5D6E /* WeatherFakeView.swift in Sources */,
 				D634D4032A38B35C0031A934 /* ContentView.swift in Sources */,
+				980EDCD12A44717E00B2E725 /* CreateRoteWeatherStatusView.swift in Sources */,
+				980EDCCD2A41CDF600B2E725 /* Tag.swift in Sources */,
 				D634D4012A38B35C0031A934 /* MPChallengeApp.swift in Sources */,
+				980EDCC32A40056800B2E725 /* TagButton.swift in Sources */,
+				980EDCCB2A40984E00B2E725 /* Location.swift in Sources */,
+				98C9A02A2A3C9D3F00EE5D6E /* CLLocationManager.swift in Sources */,
+				98C9A02C2A3C9D9800EE5D6E /* WeatherView.swift in Sources */,
+				980EDCC52A40097E00B2E725 /* CreateRouteView.swift in Sources */,
+				98C9A02E2A3C9E8D00EE5D6E /* WeatherKitManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,12 +327,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MPChallenge/MPChallenge.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MPChallenge/Preview Content\"";
-				DEVELOPMENT_TEAM = QW8X8R78UC;
+				DEVELOPMENT_TEAM = 8DK9849PTW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Sua localização será usada para sugerir locais ou atrações para visitar na cidade em que você se encontra e fornecer itinerários.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -293,12 +358,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MPChallenge/MPChallenge.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MPChallenge/Preview Content\"";
-				DEVELOPMENT_TEAM = QW8X8R78UC;
+				DEVELOPMENT_TEAM = 8DK9849PTW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Sua localização será usada para sugerir locais ou atrações para visitar na cidade em que você se encontra e fornecer itinerários.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
