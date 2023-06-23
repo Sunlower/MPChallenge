@@ -18,6 +18,7 @@ extension MKMapItem {
 
 struct CreateRouteView: View {
     @StateObject var locationDataManager = LocationDataManager()
+//    @ObservedObject var weatherKitManager = WeatherKitManager()
     @State private var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: 40.83834587046632,
                                        longitude: 14.254053016537693),
@@ -25,16 +26,17 @@ struct CreateRouteView: View {
                                longitudeDelta: 0.05)
     )
     
-    @State private var currentCity = "Carregando..."
+//    @State private var currentCity = "Carregando..."
     @State private var searchResults: [MKMapItem] = []
     @State var searchCurrent: [MKMapItem] = []
     let options = [MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeDriving, MKLaunchOptionsShowsTrafficKey: true] as [String: Any]
-    var currentLocation = MKMapItem.forCurrentLocation()
+//    var currentLocation: MKMapItem
     
     var body: some View {
         if locationDataManager.authorizationStatus == .authorizedWhenInUse {
             VStack {
                 Button("Teste"){
+//                    currentLocation = MKMapItem(placemark: MKPlacemark(coordinate: region.center))
                     //MARK: ADICIONAR O LOCAL ATUAL DO USUÁRIO COMO PRIMEIRO ITEM DO ARRAY DE MKMAPITEM
                     MKMapItem.openMaps(with: searchResults, launchOptions: options)
                 }
@@ -75,7 +77,7 @@ struct CreateRouteView: View {
                                             .font(.caption)
 //                                            .background(.red)
                                         //                                        Text(result.pointOfInterestCategory?.rawValue ?? " ")
-                                        Text(getCategory(pointOfInterest: result.pointOfInterestCategory ?? MKPointOfInterestCategory.aquarium).name)
+                                        Text(getCategory(pointOfInterest:result.pointOfInterestCategory ?? MKPointOfInterestCategory.aquarium).name)
                                             .foregroundStyle(.white)
                                             .font(.caption)
 //                                            .background(.red)
@@ -104,6 +106,10 @@ struct CreateRouteView: View {
                     }
                 }
             }
+//            .task {
+//                await weatherKitManager.getWeather(latitude: locationDataManager.latitude,
+//                                                   longitude: locationDataManager.longitude)
+//            }
             .onAppear {
                 region = MKCoordinateRegion(
                     center: CLLocationCoordinate2D(
@@ -111,25 +117,25 @@ struct CreateRouteView: View {
                         longitude: locationDataManager.longitude),
                     span: MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03)
                 )
-                //                let geocoder = CLGeocoder()
-                //                let location = CLLocation(latitude: region.center.latitude,
-                //                                          longitude: region.center.longitude)
-                //                geocoder.reverseGeocodeLocation(location, completionHandler: { placemarks, _ -> Void in
-                //
-                //                    guard let placemark = placemarks?.first else {
-                //                        return
-                //                    }
-                //
-                //                    guard let city = placemark.locality else {
-                //                        return
-                //                    }
-                //
-                //                    guard let state = placemark.administrativeArea else {
-                //                        return
-                //                    }
-                //
-                //                    currentCity = "\(city), \(state)"
-                //                })
+//                                let geocoder = CLGeocoder()
+//                                let location = CLLocation(latitude: region.center.latitude,
+//                                                          longitude: region.center.longitude)
+//                                geocoder.reverseGeocodeLocation(location, completionHandler: { placemarks, _ -> Void in
+//                
+//                                    guard let placemark = placemarks?.first else {
+//                                        return
+//                                    }
+//                
+//                                    guard let city = placemark.locality else {
+//                                        return
+//                                    }
+//                
+//                                    guard let state = placemark.administrativeArea else {
+//                                        return
+//                                    }
+//                
+//                                    currentCity = "\(city), \(state)"
+//                                })
             }
         } else {
             Text("Error Loading Location")
@@ -174,76 +180,91 @@ struct CreateRouteView: View {
     }
     
     func getCategory(pointOfInterest: MKPointOfInterestCategory) -> Tag {
-        let museums = [
-            MKPointOfInterestCategory.museum
-        ]
+//        let museums = [
+//            MKPointOfInterestCategory.museum
+//        ]
+//        
+//        let localAtractions = [
+//            //            MKPointOfInterestCategory.library,
+//            //            MKPointOfInterestCategory.marina,
+//            MKPointOfInterestCategory.theater
+//        ]
+//        
+//        let beaches = [
+//            MKPointOfInterestCategory.beach,
+//            MKPointOfInterestCategory.marina
+//        ]
+//        
+//        let nature = [
+//            //            MKPointOfInterestCategory.park,
+//            //            MKPointOfInterestCategory.nationalPark
+//            MKPointOfInterestCategory.nationalPark,
+//        ]
+//        
+//        let parks = [
+//            MKPointOfInterestCategory.park,
+//            
+//        ]
+//        
+//        let culinary = [
+////            MKPointOfInterestCategory.bakery,
+////            MKPointOfInterestCategory.brewery,
+////            MKPointOfInterestCategory.cafe,
+////            MKPointOfInterestCategory.foodMarket,
+//            MKPointOfInterestCategory.restaurant,
+////            MKPointOfInterestCategory.winery
+//        ]
+//        
+//        let shopping = [
+//            MKPointOfInterestCategory.store
+//        ]
+//        
+//        let entertainment = [
+////            MKPointOfInterestCategory.brewery,
+////            MKPointOfInterestCategory.movieTheater,
+//            MKPointOfInterestCategory.nightlife
+//        ]
         
-        let localAtractions = [
-            //            MKPointOfInterestCategory.library,
-            //            MKPointOfInterestCategory.marina,
-            MKPointOfInterestCategory.theater
-        ]
-        
-        let beaches = [
-            MKPointOfInterestCategory.beach,
-            MKPointOfInterestCategory.marina
-        ]
-        
-        let nature = [
-            //            MKPointOfInterestCategory.park,
-            //            MKPointOfInterestCategory.nationalPark
-            MKPointOfInterestCategory.nationalPark,
-        ]
-        
-        let parks = [
-            MKPointOfInterestCategory.park,
-            
-        ]
-        
-        let culinary = [
-//            MKPointOfInterestCategory.bakery,
-//            MKPointOfInterestCategory.brewery,
-//            MKPointOfInterestCategory.cafe,
-//            MKPointOfInterestCategory.foodMarket,
-            MKPointOfInterestCategory.restaurant,
-//            MKPointOfInterestCategory.winery
-        ]
-        
-        let shopping = [
-            MKPointOfInterestCategory.store
-        ]
-        
-        let entertainment = [
-//            MKPointOfInterestCategory.brewery,
-//            MKPointOfInterestCategory.movieTheater,
-            MKPointOfInterestCategory.nightlife
-        ]
-        
-        if museums.contains(pointOfInterest) {
+        if pointOfInterest == MKPointOfInterestCategory.museum {
             return Tag.allTags[0]
         }
         
-        if localAtractions.contains(pointOfInterest) {
+        if pointOfInterest == MKPointOfInterestCategory.theater {
             return Tag.allTags[1]
         }
-        if beaches.contains(pointOfInterest) {
+        if pointOfInterest == MKPointOfInterestCategory.beach{
             return Tag.allTags[2]
         }
-        if nature.contains(pointOfInterest) {
-            return Tag.allTags[6]
+        if pointOfInterest == MKPointOfInterestCategory.park{
+            return Tag.allTags[3]
         }
-        if parks.contains(pointOfInterest) {
+        if pointOfInterest == MKPointOfInterestCategory.store{
             return Tag.allTags[4]
         }
-        if culinary.contains(pointOfInterest) {
-            return Tag.allTags[7]
-        }
-        if shopping.contains(pointOfInterest) {
+        if pointOfInterest == MKPointOfInterestCategory.nightlife{
             return Tag.allTags[5]
         }
-        if entertainment.contains(pointOfInterest) {
+        if pointOfInterest == MKPointOfInterestCategory.nationalPark{
             return Tag.allTags[6]
         }
+        if pointOfInterest == MKPointOfInterestCategory.restaurant{
+            return Tag.allTags[7]
+        }
+//        if nature.contains(pointOfInterest) {
+//            return Tag.allTags[6]
+//        }
+//        if parks.contains(pointOfInterest) {
+//            return Tag.allTags[4]
+//        }
+//        if culinary.contains(pointOfInterest) {
+//            return Tag.allTags[7]
+//        }
+//        if shopping.contains(pointOfInterest) {
+//            return Tag.allTags[5]
+//        }
+//        if entertainment.contains(pointOfInterest) {
+//            return Tag.allTags[6]
+//        }
         return Tag.allTags[8]
         
     }

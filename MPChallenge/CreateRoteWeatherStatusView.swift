@@ -10,7 +10,7 @@ import MapKit
 
 struct CreateRoteWeatherStatusView: View {
     @StateObject var locationDataManager = LocationDataManager()
-    @ObservedObject var weatherKitManager = WeatherKitManager()
+    @StateObject var weatherKitManager = WeatherKitManager()
     @State private var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: 40.83834587046632,
                                        longitude: 14.254053016537693),
@@ -61,32 +61,27 @@ struct CreateRoteWeatherStatusView: View {
                         span: MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03)
                 )
                 let geocoder = CLGeocoder()
-                let location = CLLocation(latitude: region.center.latitude,
-                                          longitude: region.center.longitude)
-                geocoder.reverseGeocodeLocation(location, completionHandler: { placemarks, _ -> Void in
+                                let location = CLLocation(latitude: region.center.latitude,
+                                                          longitude: region.center.longitude)
+                                geocoder.reverseGeocodeLocation(location, completionHandler: { placemarks, _ -> Void in
 
-                    guard let placemark = placemarks?.first else {
-                        return
-                    }
+                                    guard let placemark = placemarks?.first else {
+                                        return
+                                    }
 
-                    guard let city = placemark.locality else {
-                        return
-                    }
+                                    guard let city = placemark.locality else {
+                                        return
+                                    }
 
-                    guard let state = placemark.administrativeArea else {
-                        return
-                    }
-                    guard let street = placemark.thoroughfare else {
-                        return
-                    }
-                    guard let number = placemark.subThoroughfare else {
-                        return
-                    }
+                                    guard let state = placemark.administrativeArea else {
+                                        return
+                                    }
 
-                    currentCity = "\(city), \(state)"
-                })
-            }
-        } else {
+                                    currentCity = "\(city), \(state)"
+                                })
+                            }
+
+                        } else {
             Text("Error Loading Location")
         }
     }

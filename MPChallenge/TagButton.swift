@@ -21,7 +21,7 @@ struct TagButton: View {
             Button {
                 isActivate.toggle()
                 if isActivate == true {
-                    search(for: filterTag.pointOfInterest)
+                    search(query: filterTag.searchText, category: filterTag.pointOfInterest)
                 } else {
 //                    searchResults
                     searchResults = searchResults.filter {!searchCurrent.contains($0)}
@@ -65,9 +65,10 @@ struct TagButton: View {
         }
     }
 
-    func search (for query: String) {
+    func search (query: String, category: MKPointOfInterestCategory) {
         let request = MKLocalSearch.Request()
         request.naturalLanguageQuery = query
+        request.pointOfInterestFilter = .some(MKPointOfInterestFilter(including: [category]))
         request.resultTypes = .pointOfInterest
         request.region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: locationDataManager.latitude, longitude: locationDataManager.longitude), span: MKCoordinateSpan(latitudeDelta: 0.0125, longitudeDelta: 0.0125))
         Task {
@@ -78,7 +79,7 @@ struct TagButton: View {
             searchCurrent = response?.mapItems ?? []
         }
     }
-    
+
 //    func search (for query: [MKPointOfInterestCategory]) {
 //        let request = MKLocalSearch.Request()
 //        request.naturalLanguageQuery = query
