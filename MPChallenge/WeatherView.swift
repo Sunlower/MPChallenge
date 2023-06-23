@@ -68,8 +68,8 @@ struct WeatherView: View {
                 }
             }
             .task {
-                await weatherKitManager.getWeather(latitude: locationDataManager.latitude,
-                                                   longitude: locationDataManager.longitude)
+//                await weatherKitManager.getWeather(latitude: locationDataManager.latitude,
+//                                                   longitude: locationDataManager.longitude)
 
             }
             .onAppear {

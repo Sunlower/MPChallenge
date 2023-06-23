@@ -66,8 +66,8 @@ struct WeatherFakeView: View {
                 }
             }
             .task {
-                await weatherKitManager.getWeather(latitude: region.center.latitude,
-                                                   longitude: region.center.longitude)
+//                await weatherKitManager.getWeather(latitude: region.center.latitude,
+//                                                   longitude: region.center.longitude)
 
             }
     }

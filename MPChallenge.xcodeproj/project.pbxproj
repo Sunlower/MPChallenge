@@ -11,11 +11,49 @@
 		98C9A02C2A3C9D9800EE5D6E /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C9A02B2A3C9D9800EE5D6E /* WeatherView.swift */; };
 		98C9A02E2A3C9E8D00EE5D6E /* WeatherKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C9A02D2A3C9E8D00EE5D6E /* WeatherKitManager.swift */; };
 		98C9A0312A3CA34A00EE5D6E /* WeatherFakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C9A0302A3CA34A00EE5D6E /* WeatherFakeView.swift */; };
-		D634D4012A38B35C0031A934 /* MPChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D634D4002A38B35C0031A934 /* MPChallengeApp.swift */; };
+		D61D1B3C2A45E43900A1C66A /* LocationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61D1B302A45E43900A1C66A /* LocationDelegate.swift */; };
+		D61D1B3D2A45E43900A1C66A /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61D1B322A45E43900A1C66A /* DataModel.swift */; };
+		D61D1B3E2A45E43900A1C66A /* RouteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61D1B332A45E43900A1C66A /* RouteModel.swift */; };
+		D61D1B3F2A45E43900A1C66A /* CardHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61D1B352A45E43900A1C66A /* CardHome.swift */; };
+		D61D1B402A45E43900A1C66A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61D1B362A45E43900A1C66A /* MapView.swift */; };
+		D61D1B412A45E43900A1C66A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61D1B372A45E43900A1C66A /* HomeView.swift */; };
+		D61D1B422A45E43900A1C66A /* CardInstructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61D1B382A45E43900A1C66A /* CardInstructions.swift */; };
+		D61D1B432A45E43900A1C66A /* CardRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61D1B392A45E43900A1C66A /* CardRoute.swift */; };
+		D61D1B442A45E43900A1C66A /* RouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61D1B3A2A45E43900A1C66A /* RouteView.swift */; };
+		D61D1B452A45E43900A1C66A /* CardNextStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61D1B3B2A45E43900A1C66A /* CardNextStop.swift */; };
 		D634D4032A38B35C0031A934 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D634D4022A38B35C0031A934 /* ContentView.swift */; };
 		D634D4052A38B35E0031A934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D634D4042A38B35E0031A934 /* Assets.xcassets */; };
 		D634D4082A38B35E0031A934 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D634D4072A38B35E0031A934 /* Preview Assets.xcassets */; };
+		D6629BCA2A45E06D00E33E59 /* MPChallengeWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6629BC92A45E06D00E33E59 /* MPChallengeWatchApp.swift */; };
+		D6629BCE2A45E06E00E33E59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6629BCD2A45E06E00E33E59 /* Assets.xcassets */; };
+		D6629BD12A45E06E00E33E59 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6629BD02A45E06E00E33E59 /* Preview Assets.xcassets */; };
+		D6629BD42A45E06E00E33E59 /* MPChallengeWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D6629BC72A45E06D00E33E59 /* MPChallengeWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D6629BDC2A45E2AC00E33E59 /* MPChallengeMainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6629BDB2A45E2AC00E33E59 /* MPChallengeMainApp.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6629BD22A45E06E00E33E59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D634D3F52A38B35C0031A934 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6629BC62A45E06D00E33E59;
+			remoteInfo = "MPChallengeWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D6629BD82A45E06E00E33E59 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D6629BD42A45E06E00E33E59 /* MPChallengeWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		98C9A0292A3C9D3F00EE5D6E /* CLLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationManager.swift; sourceTree = "<group>"; };
@@ -23,11 +61,26 @@
 		98C9A02D2A3C9E8D00EE5D6E /* WeatherKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherKitManager.swift; sourceTree = "<group>"; };
 		98C9A02F2A3C9FA200EE5D6E /* MPChallenge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MPChallenge.entitlements; sourceTree = "<group>"; };
 		98C9A0302A3CA34A00EE5D6E /* WeatherFakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherFakeView.swift; sourceTree = "<group>"; };
+		D61D1B302A45E43900A1C66A /* LocationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDelegate.swift; sourceTree = "<group>"; };
+		D61D1B322A45E43900A1C66A /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		D61D1B332A45E43900A1C66A /* RouteModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteModel.swift; sourceTree = "<group>"; };
+		D61D1B352A45E43900A1C66A /* CardHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardHome.swift; sourceTree = "<group>"; };
+		D61D1B362A45E43900A1C66A /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		D61D1B372A45E43900A1C66A /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D61D1B382A45E43900A1C66A /* CardInstructions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardInstructions.swift; sourceTree = "<group>"; };
+		D61D1B392A45E43900A1C66A /* CardRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardRoute.swift; sourceTree = "<group>"; };
+		D61D1B3A2A45E43900A1C66A /* RouteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteView.swift; sourceTree = "<group>"; };
+		D61D1B3B2A45E43900A1C66A /* CardNextStop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardNextStop.swift; sourceTree = "<group>"; };
+		D61D1B462A45E4EA00A1C66A /* MPChallengeWatch-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MPChallengeWatch-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		D634D3FD2A38B35C0031A934 /* MPChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D634D4002A38B35C0031A934 /* MPChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPChallengeApp.swift; sourceTree = "<group>"; };
 		D634D4022A38B35C0031A934 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D634D4042A38B35E0031A934 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D634D4072A38B35E0031A934 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D6629BC72A45E06D00E33E59 /* MPChallengeWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MPChallengeWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6629BC92A45E06D00E33E59 /* MPChallengeWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPChallengeWatchApp.swift; sourceTree = "<group>"; };
+		D6629BCD2A45E06E00E33E59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6629BD02A45E06E00E33E59 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D6629BDB2A45E2AC00E33E59 /* MPChallengeMainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPChallengeMainApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,13 +91,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D6629BC42A45E06D00E33E59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D61D1B2F2A45E43900A1C66A /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				D61D1B302A45E43900A1C66A /* LocationDelegate.swift */,
+			);
+			name = Control;
+			path = ../../../../Control;
+			sourceTree = "<group>";
+		};
+		D61D1B312A45E43900A1C66A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D61D1B322A45E43900A1C66A /* DataModel.swift */,
+				D61D1B332A45E43900A1C66A /* RouteModel.swift */,
+			);
+			name = Model;
+			path = ../../../../Model;
+			sourceTree = "<group>";
+		};
+		D61D1B342A45E43900A1C66A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D61D1B352A45E43900A1C66A /* CardHome.swift */,
+				D61D1B362A45E43900A1C66A /* MapView.swift */,
+				D61D1B372A45E43900A1C66A /* HomeView.swift */,
+				D61D1B382A45E43900A1C66A /* CardInstructions.swift */,
+				D61D1B392A45E43900A1C66A /* CardRoute.swift */,
+				D61D1B3A2A45E43900A1C66A /* RouteView.swift */,
+				D61D1B3B2A45E43900A1C66A /* CardNextStop.swift */,
+			);
+			name = View;
+			path = ../../../../View;
+			sourceTree = "<group>";
+		};
 		D634D3F42A38B35C0031A934 = {
 			isa = PBXGroup;
 			children = (
 				D634D3FF2A38B35C0031A934 /* MPChallenge */,
+				D6629BC82A45E06D00E33E59 /* MPChallengeWatch Watch App */,
 				D634D3FE2A38B35C0031A934 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				D634D3FD2A38B35C0031A934 /* MPChallenge.app */,
+				D6629BC72A45E06D00E33E59 /* MPChallengeWatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,8 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				98C9A02F2A3C9FA200EE5D6E /* MPChallenge.entitlements */,
-				D634D4002A38B35C0031A934 /* MPChallengeApp.swift */,
 				D634D4022A38B35C0031A934 /* ContentView.swift */,
+				D6629BDB2A45E2AC00E33E59 /* MPChallengeMainApp.swift */,
 				98C9A02B2A3C9D9800EE5D6E /* WeatherView.swift */,
 				98C9A0302A3CA34A00EE5D6E /* WeatherFakeView.swift */,
 				98C9A02D2A3C9E8D00EE5D6E /* WeatherKitManager.swift */,
@@ -81,6 +177,28 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		D6629BC82A45E06D00E33E59 /* MPChallengeWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				D61D1B462A45E4EA00A1C66A /* MPChallengeWatch-Watch-App-Info.plist */,
+				D6629BC92A45E06D00E33E59 /* MPChallengeWatchApp.swift */,
+				D61D1B2F2A45E43900A1C66A /* Control */,
+				D61D1B312A45E43900A1C66A /* Model */,
+				D61D1B342A45E43900A1C66A /* View */,
+				D6629BCD2A45E06E00E33E59 /* Assets.xcassets */,
+				D6629BCF2A45E06E00E33E59 /* Preview Content */,
+			);
+			path = "MPChallengeWatch Watch App";
+			sourceTree = "<group>";
+		};
+		D6629BCF2A45E06E00E33E59 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D6629BD02A45E06E00E33E59 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -92,14 +210,33 @@
 				D634D3FA2A38B35C0031A934 /* Frameworks */,
 				D634D3FB2A38B35C0031A934 /* Resources */,
 				14403F492A3A2FC10086F6ED /* ShellScript */,
+				D6629BD82A45E06E00E33E59 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6629BD32A45E06E00E33E59 /* PBXTargetDependency */,
+			);
+			name = MPChallenge;
+			productName = MPChallenge;
+			productReference = D634D3FD2A38B35C0031A934 /* MPChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D6629BC62A45E06D00E33E59 /* MPChallengeWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6629BD52A45E06E00E33E59 /* Build configuration list for PBXNativeTarget "MPChallengeWatch Watch App" */;
+			buildPhases = (
+				D6629BC32A45E06D00E33E59 /* Sources */,
+				D6629BC42A45E06D00E33E59 /* Frameworks */,
+				D6629BC52A45E06D00E33E59 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MPChallenge;
-			productName = MPChallenge;
-			productReference = D634D3FD2A38B35C0031A934 /* MPChallenge.app */;
+			name = "MPChallengeWatch Watch App";
+			productName = "MPChallengeWatch Watch App";
+			productReference = D6629BC72A45E06D00E33E59 /* MPChallengeWatch Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -113,6 +250,9 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					D634D3FC2A38B35C0031A934 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					D6629BC62A45E06D00E33E59 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
@@ -131,6 +271,7 @@
 			projectRoot = "";
 			targets = (
 				D634D3FC2A38B35C0031A934 /* MPChallenge */,
+				D6629BC62A45E06D00E33E59 /* MPChallengeWatch Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -142,6 +283,15 @@
 			files = (
 				D634D4082A38B35E0031A934 /* Preview Assets.xcassets in Resources */,
 				D634D4052A38B35E0031A934 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6629BC52A45E06D00E33E59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6629BD12A45E06E00E33E59 /* Preview Assets.xcassets in Resources */,
+				D6629BCE2A45E06E00E33E59 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,15 +323,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				98C9A0312A3CA34A00EE5D6E /* WeatherFakeView.swift in Sources */,
+				D6629BDC2A45E2AC00E33E59 /* MPChallengeMainApp.swift in Sources */,
 				D634D4032A38B35C0031A934 /* ContentView.swift in Sources */,
-				D634D4012A38B35C0031A934 /* MPChallengeApp.swift in Sources */,
 				98C9A02A2A3C9D3F00EE5D6E /* CLLocationManager.swift in Sources */,
 				98C9A02C2A3C9D9800EE5D6E /* WeatherView.swift in Sources */,
 				98C9A02E2A3C9E8D00EE5D6E /* WeatherKitManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D6629BC32A45E06D00E33E59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D61D1B442A45E43900A1C66A /* RouteView.swift in Sources */,
+				D61D1B402A45E43900A1C66A /* MapView.swift in Sources */,
+				D61D1B422A45E43900A1C66A /* CardInstructions.swift in Sources */,
+				D61D1B452A45E43900A1C66A /* CardNextStop.swift in Sources */,
+				D61D1B3D2A45E43900A1C66A /* DataModel.swift in Sources */,
+				D61D1B3C2A45E43900A1C66A /* LocationDelegate.swift in Sources */,
+				D61D1B432A45E43900A1C66A /* CardRoute.swift in Sources */,
+				D61D1B3E2A45E43900A1C66A /* RouteModel.swift in Sources */,
+				D61D1B412A45E43900A1C66A /* HomeView.swift in Sources */,
+				D61D1B3F2A45E43900A1C66A /* CardHome.swift in Sources */,
+				D6629BCA2A45E06D00E33E59 /* MPChallengeWatchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D6629BD32A45E06E00E33E59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6629BC62A45E06D00E33E59 /* MPChallengeWatch Watch App */;
+			targetProxy = D6629BD22A45E06E00E33E59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D634D4092A38B35E0031A934 /* Debug */ = {
@@ -234,7 +410,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -288,7 +464,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -301,13 +477,14 @@
 		D634D40C2A38B35E0031A934 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MPChallenge/MPChallenge.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MPChallenge/Preview Content\"";
-				DEVELOPMENT_TEAM = 8DK9849PTW;
+				DEVELOPMENT_TEAM = QW8X8R78UC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Sua localização será usada para sugerir locais ou atrações para visitar na cidade em que você se encontra e fornecer itinerários.";
@@ -321,7 +498,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Ieda.DailyDoodle.MPChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ieda.MPChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -332,13 +509,14 @@
 		D634D40D2A38B35E0031A934 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MPChallenge/MPChallenge.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MPChallenge/Preview Content\"";
-				DEVELOPMENT_TEAM = 8DK9849PTW;
+				DEVELOPMENT_TEAM = QW8X8R78UC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Sua localização será usada para sugerir locais ou atrações para visitar na cidade em que você se encontra e fornecer itinerários.";
@@ -352,11 +530,81 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Ieda.DailyDoodle.MPChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ieda.MPChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D6629BD62A45E06E00E33E59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MPChallengeWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = QW8X8R78UC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MPChallengeWatch-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = MPChallengeWatch;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "quero sua localizacao";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "quero sua localizacao";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "quero sua localizacao";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.Ieda.MPChallenge;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ieda.MPChallenge.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.3;
+			};
+			name = Debug;
+		};
+		D6629BD72A45E06E00E33E59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MPChallengeWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = QW8X8R78UC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MPChallengeWatch-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = MPChallengeWatch;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "quero sua localizacao";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "quero sua localizacao";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "quero sua localizacao";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.Ieda.MPChallenge;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ieda.MPChallenge.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.3;
 			};
 			name = Release;
 		};
@@ -377,6 +625,15 @@
 			buildConfigurations = (
 				D634D40C2A38B35E0031A934 /* Debug */,
 				D634D40D2A38B35E0031A934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6629BD52A45E06E00E33E59 /* Build configuration list for PBXNativeTarget "MPChallengeWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6629BD62A45E06E00E33E59 /* Debug */,
+				D6629BD72A45E06E00E33E59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
