@@ -73,12 +73,24 @@ struct TagButton: View {
         Task {
             let search = MKLocalSearch(request: request)
             let response = try? await search.start()
-//            searchResults = response?.mapItems ?? []
-//            searchResults.append(contentsOf: response?.mapItems ?? [])
 
             searchResults.append(contentsOf: response?.mapItems ?? [])
             searchCurrent = response?.mapItems ?? []
         }
     }
+    
+//    func search (for query: [MKPointOfInterestCategory]) {
+//        let request = MKLocalSearch.Request()
+//        request.naturalLanguageQuery = query
+//        request.resultTypes = query
+//        request.region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: locationDataManager.latitude, longitude: locationDataManager.longitude), span: MKCoordinateSpan(latitudeDelta: 0.0125, longitudeDelta: 0.0125))
+//        Task {
+//            let search = MKLocalSearch(request: request)
+//            let response = try? await search.start()
+//
+//            searchResults.append(contentsOf: response?.mapItems ?? [])
+//            searchCurrent = response?.mapItems ?? []
+//        }
+//    }
 }
 

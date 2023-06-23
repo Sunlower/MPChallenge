@@ -22,10 +22,12 @@ extension Tag {
         Tag(iconName: "tree.fill", name: "Parques", pointOfInterest: "park"),
         Tag(iconName: "gift.fill", name: "Compras", pointOfInterest: "store"),
         Tag(iconName: "party.popper.fill", name: "Entretenimento", pointOfInterest: "nightlife"),
-        Tag(iconName: "leaf.fill", name: "Natureza", pointOfInterest: "marina"),
+        Tag(iconName: "leaf.fill", name: "Natureza", pointOfInterest: "nationalPark"),
         Tag(iconName: "fork.knife", name: "Culinária", pointOfInterest: "restaurant"),
+        Tag(iconName: " ", name: " ", pointOfInterest: " ")
     ]
     
 }
 
 //MARK: Algumas dessas tags precisam agrupar vários pontos de interesse
+

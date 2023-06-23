@@ -21,7 +21,7 @@ struct CreateRoteWeatherStatusView: View {
     
     var body: some View {
         if locationDataManager.authorizationStatus == .authorizedWhenInUse {
-            VStack{
+            VStack {
                 RoundedRectangle(cornerRadius: 22)
                     .fill(LinearGradient(colors: [.purple, .blue], startPoint: .top, endPoint: .bottom))
                     .frame(width: 357, height: 132)
@@ -76,18 +76,18 @@ struct CreateRoteWeatherStatusView: View {
                     guard let state = placemark.administrativeArea else {
                         return
                     }
+                    guard let street = placemark.thoroughfare else {
+                        return
+                    }
+                    guard let number = placemark.subThoroughfare else {
+                        return
+                    }
 
                     currentCity = "\(city), \(state)"
                 })
             }
-            
         } else {
             Text("Error Loading Location")
         }
-        
     }
-}
-
-#Preview {
-    CreateRoteWeatherStatusView()
 }

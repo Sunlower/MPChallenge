@@ -10,7 +10,7 @@ import MapKit
 
 struct Location {
     let local: MKMapItem
-    let category: Category
+    let tagCategory: Tag
     let imageName: String
     let isSelected: Bool
 }
