@@ -10,10 +10,12 @@ import MapKit
 
 struct TagButton: View {
     @Binding var searchResults: [MKMapItem]
+    @Binding var searchLocations: [Location]
     @StateObject var locationDataManager = LocationDataManager()
     @State var isActivate: Bool = false
     @State var searchCurrent: [MKMapItem]
-    
+    @State var searchCurrentLocations: [Location]
+
     let filterTag: Tag
 
     var body: some View {
@@ -25,13 +27,14 @@ struct TagButton: View {
                 } else {
 //                    searchResults
                     searchResults = searchResults.filter {!searchCurrent.contains($0)}
+                    searchLocations = searchLocations.filter {!searchCurrentLocations.contains($0)}
                 }
 //                search(for: "restaurant")
 
             } label: {
                 if isActivate == true {
 //                    Label("Restaurantes", systemImage: "fork.knife.circle")
-                    HStack{
+                    HStack {
                         Image(systemName: filterTag.iconName)
                             .foregroundStyle(.white)
                         Text(filterTag.name)
@@ -40,7 +43,7 @@ struct TagButton: View {
                     .padding()
                     .background {
                         Capsule()
-                            .fill(.blue)
+                            .fill(Color(hue: 15/360, saturation: 38/100, brightness: 67/100))
                             .frame(height: 32)
 
                     }
@@ -48,15 +51,15 @@ struct TagButton: View {
                 } else {
                     HStack{
                         Image(systemName: filterTag.iconName)
-                            .foregroundStyle(.blue)
+                            .foregroundStyle(Color(hue: 15/360, saturation: 38/100, brightness: 67/100))
                         Text(filterTag.name)
-                            .foregroundStyle(.blue)
-                            
+                            .foregroundStyle(Color(hue: 15/360, saturation: 38/100, brightness: 67/100))
+
                     }
                     .padding()
                     .background{
                         Capsule()
-                            .stroke(.blue, lineWidth: 2)
+                            .stroke(Color(hue: 15/360, saturation: 38/100, brightness: 67/100), lineWidth: 2)
                             .frame(height: 32)
 
                     }
@@ -77,6 +80,9 @@ struct TagButton: View {
 
             searchResults.append(contentsOf: response?.mapItems ?? [])
             searchCurrent = response?.mapItems ?? []
+
+            searchLocations = searchResults.map(Location.init) // depois estudar Mapper
+            searchCurrentLocations = searchCurrent.map(Location.init)
         }
     }
 

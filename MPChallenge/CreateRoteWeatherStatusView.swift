@@ -23,7 +23,7 @@ struct CreateRoteWeatherStatusView: View {
         if locationDataManager.authorizationStatus == .authorizedWhenInUse {
             VStack {
                 RoundedRectangle(cornerRadius: 22)
-                    .fill(LinearGradient(colors: [.purple, .blue], startPoint: .top, endPoint: .bottom))
+                    .fill(LinearGradient(colors: [Color(hue: 31/360, saturation: 44/100, brightness: 87/100), Color(hue: 15/360, saturation: 38/100, brightness: 67/100)], startPoint: .topTrailing, endPoint: .bottomLeading))
                     .frame(width: 357, height: 132)
                     .overlay {
                         VStack {

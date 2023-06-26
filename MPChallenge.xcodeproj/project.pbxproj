@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9802F8492A48F3D4009B7726 /* SelectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9802F8482A48F3D4009B7726 /* SelectButton.swift */; };
 		980EDCC32A40056800B2E725 /* TagButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980EDCC22A40056800B2E725 /* TagButton.swift */; };
 		980EDCC52A40097E00B2E725 /* CreateRouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980EDCC42A40097E00B2E725 /* CreateRouteView.swift */; };
 		980EDCCB2A40984E00B2E725 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980EDCCA2A40984E00B2E725 /* Location.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9802F8482A48F3D4009B7726 /* SelectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectButton.swift; sourceTree = "<group>"; };
 		980EDCC22A40056800B2E725 /* TagButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagButton.swift; sourceTree = "<group>"; };
 		980EDCC42A40097E00B2E725 /* CreateRouteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRouteView.swift; sourceTree = "<group>"; };
 		980EDCCA2A40984E00B2E725 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				980EDCCA2A40984E00B2E725 /* Location.swift */,
 				98C9A02B2A3C9D9800EE5D6E /* WeatherView.swift */,
 				980EDCC42A40097E00B2E725 /* CreateRouteView.swift */,
+				9802F8482A48F3D4009B7726 /* SelectButton.swift */,
 				980EDCD02A44717E00B2E725 /* CreateRoteWeatherStatusView.swift */,
 				98C9A0302A3CA34A00EE5D6E /* WeatherFakeView.swift */,
 				98C9A02D2A3C9E8D00EE5D6E /* WeatherKitManager.swift */,
@@ -199,6 +202,7 @@
 				980EDCC32A40056800B2E725 /* TagButton.swift in Sources */,
 				980EDCCB2A40984E00B2E725 /* Location.swift in Sources */,
 				98C9A02A2A3C9D3F00EE5D6E /* CLLocationManager.swift in Sources */,
+				9802F8492A48F3D4009B7726 /* SelectButton.swift in Sources */,
 				98C9A02C2A3C9D9800EE5D6E /* WeatherView.swift in Sources */,
 				980EDCC52A40097E00B2E725 /* CreateRouteView.swift in Sources */,
 				98C9A02E2A3C9E8D00EE5D6E /* WeatherKitManager.swift in Sources */,
@@ -328,18 +332,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MPChallenge/MPChallenge.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MPChallenge/Preview Content\"";
 				DEVELOPMENT_TEAM = 8DK9849PTW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Sabiá";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Sua localização será usada para sugerir locais ou atrações para visitar na cidade em que você se encontra e fornecer itinerários.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -347,9 +353,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ieda.DailyDoodle.MPChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -359,18 +369,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MPChallenge/MPChallenge.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MPChallenge/Preview Content\"";
 				DEVELOPMENT_TEAM = 8DK9849PTW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Sabiá";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Sua localização será usada para sugerir locais ou atrações para visitar na cidade em que você se encontra e fornecer itinerários.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,9 +390,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ieda.DailyDoodle.MPChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

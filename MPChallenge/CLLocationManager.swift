@@ -29,9 +29,6 @@ class LocationDataManager : NSObject, ObservableObject, CLLocationManagerDelegat
         locationManager.delegate = self
     }
 
-//    func getNameCurrentLocation() {
-//
-//    }
 
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         switch manager.authorizationStatus {

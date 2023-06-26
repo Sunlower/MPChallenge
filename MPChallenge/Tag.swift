@@ -8,7 +8,7 @@
 import Foundation
 import MapKit
 
-struct Tag {
+struct Tag: Equatable {
     let iconName: String
     let name: String
     let searchText: String
