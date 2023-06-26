@@ -19,7 +19,7 @@ import WeatherKit
                                                                           longitude: longitude))
             }.value
         } catch {
-            fatalError("\(error)")
+            print(error)
         }
     }
 

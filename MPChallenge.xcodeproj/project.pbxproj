@@ -17,6 +17,19 @@
 		D634D4082A38B35E0031A934 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D634D4072A38B35E0031A934 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D6629BA62A45D65200E33E59 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		98C9A0292A3C9D3F00EE5D6E /* CLLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationManager.swift; sourceTree = "<group>"; };
 		98C9A02B2A3C9D9800EE5D6E /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
@@ -28,6 +41,7 @@
 		D634D4022A38B35C0031A934 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D634D4042A38B35E0031A934 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D634D4072A38B35E0031A934 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D6629BC22A45D7EA00E33E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +74,7 @@
 		D634D3FF2A38B35C0031A934 /* MPChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				D6629BC22A45D7EA00E33E59 /* Info.plist */,
 				98C9A02F2A3C9FA200EE5D6E /* MPChallenge.entitlements */,
 				D634D4002A38B35C0031A934 /* MPChallengeApp.swift */,
 				D634D4022A38B35C0031A934 /* ContentView.swift */,
@@ -92,6 +107,7 @@
 				D634D3FA2A38B35C0031A934 /* Frameworks */,
 				D634D3FB2A38B35C0031A934 /* Resources */,
 				14403F492A3A2FC10086F6ED /* ShellScript */,
+				D6629BA62A45D65200E33E59 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
@@ -307,9 +323,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MPChallenge/Preview Content\"";
-				DEVELOPMENT_TEAM = 8DK9849PTW;
+				DEVELOPMENT_TEAM = QW8X8R78UC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MPChallenge/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Sua localização será usada para sugerir locais ou atrações para visitar na cidade em que você se encontra e fornecer itinerários.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -321,7 +338,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Ieda.DailyDoodle.MPChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ieda.MPChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -338,9 +355,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MPChallenge/Preview Content\"";
-				DEVELOPMENT_TEAM = 8DK9849PTW;
+				DEVELOPMENT_TEAM = QW8X8R78UC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MPChallenge/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Sua localização será usada para sugerir locais ou atrações para visitar na cidade em que você se encontra e fornecer itinerários.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -352,7 +370,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Ieda.DailyDoodle.MPChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ieda.MPChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
