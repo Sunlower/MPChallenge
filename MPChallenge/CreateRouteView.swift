@@ -47,7 +47,7 @@ struct CreateRouteView: View {
                             MKMapItem.openMaps(
                                 with: {
                                     var results = [MKMapItem.forCurrentLocation()]
-                                    results.append(contentsOf: searchResults)
+                                    results.append(contentsOf: isSelectedLocation.map(\.local))
                                     return results
                                 }(),
                                 launchOptions: options
