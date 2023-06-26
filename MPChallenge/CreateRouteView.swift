@@ -43,7 +43,7 @@ struct CreateRouteView: View {
                 HStack {
                     Spacer()
                     Button {
-                        if !searchLocations.isEmpty {
+                        if !isSelectedLocation.isEmpty {
                             MKMapItem.openMaps(
                                 with: {
                                     var results = [MKMapItem.forCurrentLocation()]
@@ -55,7 +55,7 @@ struct CreateRouteView: View {
                         }
 
                     } label: {
-                        if searchLocations.isEmpty {
+                        if isSelectedLocation.isEmpty {
                             Text("Criar rota")
                                 .font(.caption)
                                 .bold()
@@ -63,7 +63,7 @@ struct CreateRouteView: View {
                                 .padding(6)
                                 .background {
                                     RoundedRectangle(cornerRadius: 8)
-                                        .fill(Color(hue: 0, saturation: 0, brightness: 53/100, opacity: 40/100))
+                                        .fill(Color(hue: 0, saturation: 0, brightness: 0.53, opacity: 0.4))
                                 }
                         } else {
                             Text("Criar rota")
@@ -118,7 +118,9 @@ struct CreateRouteView: View {
                                             .foregroundStyle(Color(hue: 201/360, saturation: 52/100, brightness: 44/100))
                                     }
                                 }
-
+                                Line()
+                                    .stroke(Color.black, style: StrokeStyle(lineWidth: 1, lineCap: .butt, lineJoin: .miter, dash: [5]))
+                                    .frame(width: 1)
                                 Image(result.imageName)
                                     .resizable()
                                     .frame(width: 60, height: 65)
@@ -155,9 +157,21 @@ struct CreateRouteView: View {
                             .padding()
                         }
                         .background {
-                            RoundedRectangle(cornerRadius: 5)
-                                .stroke(lineWidth: 1)
-                                .frame(maxWidth: .infinity)
+                            if result.isSelected{
+                                ZStack{
+                                    RoundedRectangle(cornerRadius: 5)
+                                        .stroke(lineWidth: 1)
+                                        .frame(maxWidth: .infinity)
+                                    RoundedRectangle(cornerRadius: 5)
+                                        .fill(Color(hue: 31/360, saturation: 44/100, brightness: 87/100, opacity: 0.4))
+                                        .frame(maxWidth: .infinity)
+                                }
+                            } else {
+                                RoundedRectangle(cornerRadius: 5)
+                                    .stroke(lineWidth: 1)
+                                    .frame(maxWidth: .infinity)
+                            }
+
                         }
 
                         .padding()
@@ -185,9 +199,16 @@ struct CreateRouteView: View {
 
                 }
                 .padding()
-
             }
+        }
+    }
+}
 
-                    }
+struct Line: Shape {
+    func path(in rect: CGRect) -> Path {
+        return Path { path in
+            path.move(to: CGPoint(x: 0, y: 0))
+            path.addLine(to: CGPoint(x: 0, y: rect.height))
+        }
     }
 }
